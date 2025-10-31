@@ -1,0 +1,146 @@
+Course.html
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aa.css">
+    <style>
+        .container {
+            float: left;
+  position: relative;
+  width: 100%; 
+Department of Information Technology | APSIT
+            max-width: 500px; 
+            margin: auto
+ }
+ }
+        img {
+            display: block;
+  border-radius: 8px;
+ .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+ }
+ .container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+ Department of Information Technology | APSIT
+}
+ .text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+  <h1>Course Page</h1>
+ </div>
+ <nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+ </nav>
+ Department of Information Technology | APSIT
+<h2> SIDDHI THANEKAR</h2>
+ <div class="container">
+  <img src="html.jpg" alt="Avatar" class="image" width="500" height="300">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+ </div>
+ <div class="container1">
+ <div class="content" >
+    <pre>
+    HTML stands for Hyper Text Markup Language
+    HTML is the standard markup language for Web pages
+   HTML elements are the building blocks of HTML pages
+   HTML elements are represented by <> tags</pre>
+    </div>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            <!-- Fallback content in case video can't be played -->
+            Your browser does not support the video tag.
+        </video>
+ Department of Information Technology | APSIT
+    </div>
+ </div>
+ </body>
+ </html>
+ aa.css:
+ @keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+ }
+ h1 {
+    color: #fff;
+  animation: fadeOut 2s ease;
+ }
+ nav{
+    background-color: bisque;
+    padding: 1rem;
+    display: block;
+    float: right;
+ }
+ Department of Information Technology | APSIT
+h2{
+ body{
+            font-size: 3rem;
+            color: #fff;
+            background: url(bg.jpeg) center;
+            background-size: cover;
+            background-clip: text ;
+            color: transparent;
+            animation: animate 10s ease;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    background: url();
+ }  
+.container1{
+    width: 500;
+    height:300;
+    box-sizing: border-box ;
+    border: 2px solid black;
+ }  
+.content{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cadetblue;
+ }
+ Department of Information Technology | APSIT
+.video-background {
+    position: fixed;  /* Fix the video to stay in place */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1;  /* Sends video behind other content */
+    overflow: hidden;  /* Prevents scrolling */
+ }
+ .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the screen without stretching */
+    object-position: center; /* Keeps the video centered */
+    border: 0; /* Optional: removes any borders */
+ }
