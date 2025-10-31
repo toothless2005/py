@@ -1,0 +1,56 @@
+let a=Math.random();
+ a=(a*10)-5;
+ let pr=new Promise((resolve,reject)=>{
+ if(a > 0){
+ console.log("It's a positive number",a);
+ resolve("This is a success case.");
+ }
+ else if(a === 0){
+ console.log("It's zero");
+ }
+ else{
+ console.log("It's a negative number",a);
+  reject("This is a failure case.");
+ }
+ });
+ pr.then(()=>{console.log("Sucess")})
+ .catch(()=>{console.log("Failure,since it's a negative number")});
+
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Fibonacci Iterator</title>
+ </head>
+ <body>
+ <h1>Fibonacci Iterator</h1>
+ <script>
+ const myNumbers = {
+ [Symbol.iterator]() {
+ let a = 0, b = 1, count = 0;
+ const max = 10;
+ return {
+ next() {
+ if (count < max) {
+ let value = a;
+ [a, b] = [b, a + b];
+ count++;
+ return { value, done: false };
+ } else {
+ return { done: true };
+ }
+ }
+ };
+ }
+ };
+ // Use for...of to consume the iterable
+ for (const num of myNumbers) {
+ document.write(num + "<br>");
+ }
+ </script>
+ </body>
+</html>
+
+

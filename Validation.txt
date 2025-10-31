@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    legend{
+        font-size: 24px;
+        text-align: center;
+    }
+    body{
+        background-color: cadetblue;
+ Department of Information Technology | APSIT
+    }
+    #f1{
+        background-color: rgb(94, 94, 104);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    </style>
+ </head>
+ <body>
+    <script>
+        function val() {
+            let
+            //
+ form = document.f1;
+ Name validation - only letters & spaces
+            let
+ name = form.name.value.trim();
+            if (!/^[a-zA-Z\s]+$/.test(name)) {
+                alert("Name must not contain numbers or special characters.");
+                form.name.focus();
+                return false;
+            }
+            //
+ Password validation
+ Department of Information Technology | APSIT
+            let
+            let
+ pwd = form.pwd.value;
+ cpwd = form.cpwd.value;
+            if (pwd.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                form.pwd.focus();
+                return false;
+            }
+            if (pwd !== cpwd) {
+                alert("Passwords do not match.");
+                form.cpwd.focus();
+                return false;
+            }
+            //
+ Gender validation
+            let
+            let
+ genderSelected = false;
+ genders = form.gen;
+            for (let i = 0; i < genders.length; i++) {
+                if (genders[i].checked) {
+                    genderSelected = true;
+                    break;
+                }
+            }
+            if (!genderSelected) {
+ Department of Information Technology | APSIT
+                alert("Please select your gender.");
+                return false;
+            }
+            //
+ Phone validation - must be 10 digits
+            let
+ phone = form[7].value.trim(); // second phone input
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Phone number must be exactly 10 digits.");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+    <center>
+     <h1>Registration Form</h1>
+    <form name="f1" action="#" method="get" onsubmit="return val()">
+        <!--<div class="First">-->
+        <fieldset id="f1"> 
+            <legend>User Personal Information</legend>  
+        Enter Your Full Name:<br>
+        <input type ="text" name="name" placeholder="full name" required><br><br>             
+Department of Information Technology | APSIT
+        Moodle Id:<br>
+        <input type ="text" name="moodle" placeholder="moodle id" required><br><br>
+        Email:<br>
+        <input type ="email" name="mail" placeholder="abc@gmail.com" required><br><br>
+        Password:<br>
+        <input type="password" name="pwd" placeholder="password" required><br><br>
+        Confirm Password:<br>
+        <input type="password" name="cpwd" placeholder="password" required><br><br>
+         Gender:<br>
+            <input type="radio" name="gen"> Female
+            <input type="radio" name="gen"> Male
+            <input type="radio" name="gen"> Others<br><br>
+        Enter Address:<br>
+           <textarea cols="50" rows="5" placeholder="Enter Address"></textarea><br><br>
+        Select Year:<br>
+            <select>
+                <option>OTHER</option>
+                <option>FE</option>
+                <option>SE</option>
+                <option>TE</option>
+                <option>BE</option>
+            </select><br><br>  
+        Phone number:<br>
+ Department of Information Technology | APSIT
+        <input type="text" value="+91" size="2"><input type="tel" 
+placeholder="1234567891">     
+        </fieldset>
+        <!--</div>-->
+        <!--<div class="pr">-->
+        <br><br>
+        <div>
+            <input type="submit" value="SUBMIT">                
+        </div>
+        </form>
+        </center>
+ </body>
+ </html>

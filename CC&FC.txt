@@ -1,0 +1,153 @@
+Myfunctionalcomponent.js
+ import './a.css';
+ import kevin from './kevin.jpeg';
+ import bob from './bob.jpeg';
+ import stuart from './stuart.jpeg';
+ function Myfunctionalcomponent(){
+ return(
+ <div>
+ <h1>MINIONS</h1> 
+<p>Meet the Minions!  
+ 
+ 💛
+ They are small, yellow, funny, and full of 
+energy. Always loyal, playful, and a little mischievous, the Minions love 
+adventures, jokes, and of course… bananas .</p> 
+<p>Intoducing the MINIONS</p> 
+<div className="minion-card">
+ Department of Information Technology | APS
+ IT
+<img src={kevin}></img>
+ <p>Kevin – The tall and responsible leader, always trying to keep things 
+in control.</p> 
+</div>
+ <div className="minion-card">
+ <img src={bob}></img>
+ <p>Bob – The adorable and innocent little minion, full of curiosity and 
+cuteness.</p> 
+</div>
+ <div className="minion-card">
+ <img src={stuart}></img> 
+<p>Stuart – The cool, playful one who loves his guitar and is always 
+ready for fun.</p>  
+</div>  
+<a href="https://en.wikipedia.org/wiki/Minions_%28Despicable_Me%29" 
+>Wanna know more about them?</a>
+ </div>
+ )
+ }
+ export default Myfunctionalcomponent;
+
+
+
+
+ Myclasscomponent.js
+ import React, {Component} from "react";
+ import './b.css';
+ import Carslogo from './Carslogo.png';
+ import car1 from './car1.jpeg';
+ import car3 from './car3.jpeg';
+ Department of Information Technology | APSIT
+import car4 from './car4.jpeg';
+ class Myclasscomponent extends Component{
+ render(){
+    return(
+        <div>
+            <h1>Class Component!!!!!!</h1>
+            <p>car details</p>
+            <img src={Carslogo}></img>
+            <div>
+                        <h1>Cars</h1> 
+                        <p>"Fast cars , big dreams , and a whole lot of heart ❤  — 🚗 💭
+ discover the road to friendship  and redemption in Cars!"</p> 🤝
+                        <p>Intoducing the CARS</p> 
+                        <div className="CAR-card">
+                        <img src={car1}></img>
+                        <p>Lightning McQueen – Lightning McQueen is an ambitious, 
+slightly arrogant race car who is trying to win the Piston Cup. Over time, he 
+learns about the importance of teamwork, humility, and friendship.</p> 
+                        </div>
+                        <div className="CAR-card">
+                        <img src={car3}></img>
+                        <p>Mater – Mater is quirky, fun, and a little dim-witted, but he's 
+extremely loyal and a great friend. He's often the source of comic relief.</p> 
+                        </div>
+                        <div className="CAR-card">
+                        <img src={car4}></img> 
+Department of Information Technology | APSIT
+<p>Doc Hudson – A retired race car (known as the Fabulous 
+Hudson Hornet) who becomes Lightning's mentor in Radiator Springs. Initially 
+gruff and private, he eventually teaches McQueen valuable life lessons.</p>  
+</div>  
+<a href="https://en.wikipedia.org/wiki/List_of_Cars_characters" 
+>Wanna know more about them?</a>
+ </div>
+ </div>
+ );
+ }
+ }
+ export default Myclasscomponent;
+
+
+
+
+ a.css
+ div{
+ background-color: gray;
+ }
+ h1{
+ color: yellow;
+ }
+ .minion-card {
+ display: flex;
+ align-items: center;
+ margin: 20px 0;
+ }
+ .minion-card img {
+width: 150px;
+ height: auto;
+ margin-right: 20px;
+ border-radius: 12px;
+ }
+
+
+
+ b.css
+ div{
+ background-color: gray;
+ }
+ h1{
+ color: red;
+ }
+ .CAR-card {
+ display: flex;
+ align-items: center;
+ margin: 20px 0;
+ }
+ .CAR-card img {
+ width: 150px;
+ height: auto;
+ margin-right: 20px;
+ border-radius: 12px;
+ }
+
+
+
+App.js
+ import logo from './logo.svg';
+ import kevin from './kevin.jpeg';
+ import bob from './bob.jpeg';
+ import stuart from './stuart.jpeg';
+ import './App.css';
+ import Myfunctionalcomponent from './Myfunctionalcomponent';
+ import Myclasscomponent from './Myclasscomponent';
+ function App() {
+ return (
+ <div className="App">
+ <h1>Siddhi Thanekar</h1>
+ <Myfunctionalcomponent />
+ <Myclasscomponent />
+ </div>
+ );
+ }
+ export default App;

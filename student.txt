@@ -1,0 +1,153 @@
+Exp1: WAP to create a student portfolio webpage using html5 elements
+
+Student.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee{
+            background-color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35;
+            color: brown;
+        }
+        body{
+            color: rgb(10,10,10);
+            font-size: 25;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url(image.jpeg);
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h2>Personal Info</h2></marquee>
+    <center>
+        <a href ="https://in.linkedin.com">connect with me</a>
+
+        <a href="basic.html">basic</a>
+        <a href=""academics.html>Academics</a>
+        <a href="others.html">Others</a>
+    </center>
+</body>
+</html>
+
+basic.html(list use karke skills, hobbies, student id, and all)
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Basic</title>
+ <style>
+ marquee{
+ background-color: black;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 35;
+ color:aliceblue
+ } 
+</style>
+ </head>
+ <body>
+ <marquee>A. P. Shah Institute of Technology</marquee>
+ <center><h1>Siddhi Thanekar</h1></center>
+ <ol>
+ <li>Skills</li>
+ <ul>
+ <li>Java</li>
+ <li>Python</li>
+ <li>C</li>
+ </ul>
+ <li>Hobbies</li>
+ <ul>
+ <li>Reading</li>
+ <li>Netflix</li>
+ <li>Music</li>
+ <li>Badminton</li>
+ </ul>
+ <li>Student ID:23104048</li>
+ <li>Email:23104048@apsit.edu.in</li>
+ <li>Contact: 9874567936</li>
+ </ol>
+ <a href="https://in.linkedin.com">connect with me here</a>
+ <a href="First.html">Main Page</a>
+ <a href="academics.html">Academics</a>
+ <a href="others.html">Others</a>
+ </body>
+ </html>
+
+Academics.html(table showing academics score)
+  DOCTYPE     html  >  
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Academics</title>
+ <style>
+ table{
+ background-color: bisque;
+ color:rgb(13, 14, 14);
+ }
+ body{
+ font-size: 30;
+ }
+ </style>
+ </head>
+ <body>
+ <center>
+ <table border="20" cellspacing="5" cellpadding="10">
+ <tr>
+ <th>Subject</th>
+ <th>Marks</th>
+ </tr>
+ <tr>
+ <td>DSA</td>
+ <td>72/80</td>
+ </tr>
+ <tr>
+ <td>MATHS</td>
+ <td>76/80</td>
+ </tr>
+ <tr>
+ <td>DBMS</td>
+ <TD>68/80</TD>
+ </tr>
+ </table>
+ </center>
+ <a href="https://in.linkedin.com">connect with me here</a>
+ <a href="First.html">Main Page</a>
+ <a href="basic.html">Basic</a>
+ <a href="academics.html">Academics</a>
+ <a href="others.html">Others</a>
+ </body>
+ </html>
+
+others.html(extracurricular nrmal list mai)
+  <!DOCTYPE     html  >  
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Others</title>
+ </head>
+ <body>
+ <center><h1>Extracurricular</h1></center>
+ <ul>
+ <li>Photography</li>
+ <li>Virtual Internships:</li>
+ <ol>
+ <li>Google AIML</li>
+ <LI>AWS Data Engineering</LI>
+ <li>Ethical Hacking</li>
+ </ol>
+ </ul>
+ <a href="https://in.linkedin.com">connect with me here</a>
+ <a href="First.html">Main Page</a>
+ <a href="academics.html">Academics</a>
+ <a href="basic.html">Basic</a>
+ </body>
+ </html>
+
