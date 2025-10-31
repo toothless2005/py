@@ -1,0 +1,48 @@
+Studref.js
+ import React, {Component} from "react";
+ class Studref extends Component {
+ constructor()
+ {
+ super()
+    this.Studref=React.createRef();
+      this.change = this.change.bind(this);
+ change(){
+    this.Studref.current.style.fontSize="100px";
+    this.Studref.current.style.fontFamily="Times New Roman"
+    this.Studref.current.style.backgroundColor="yellow";
+ Department of Information Technology | APSIT
+}
+ hideContent(){
+  this.Studref.current.style.display="none"
+ }
+ render(){
+    return(
+        <div>
+            <h1>Demo for ref using class Component</h1>
+            <input type="text" ref={this.Studref}></input>
+            <br></br><br></br>
+            <button onClick={()=>this.change()}>Click Me</button>
+            <button onClick={()=>this.hideContent()}>Hide Content</button>
+        </div>
+    );
+ }
+ }
+ export default Studref;
+
+
+
+
+ App.js
+ import './App.css';
+ import Siddhi from './Siddhi';
+ import Studref from './Studref';
+ function App() {
+  return (
+ Department of Information Technology | APSIT
+    <div className="App">
+      <Siddhi />
+      <Studref />
+    </div>
+  );
+ }
+ export default App;
